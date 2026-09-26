@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" font-family="IBM Plex Sans, Arial, sans-serif">
+  <rect width="900" height="420" fill="#0d1117"/>
+
+  <rect x="30" y="180" width="140" height="60" rx="10" fill="#171d26" stroke="#97ce4c"/>
+  <text x="100" y="215" fill="#e9edf2" font-size="15" text-anchor="middle">Usuário</text>
+
+  <rect x="230" y="150" width="200" height="120" rx="10" fill="#171d26" stroke="#97ce4c" stroke-width="2"/>
+  <text x="330" y="200" fill="#e9edf2" font-size="16" text-anchor="middle" font-weight="bold">Interface</text>
+  <text x="330" y="222" fill="#9aa7b5" font-size="12" text-anchor="middle">HTML + CSS + JS</text>
+  <text x="330" y="240" fill="#9aa7b5" font-size="12" text-anchor="middle">(componente principal)</text>
+
+  <rect x="230" y="20" width="200" height="90" rx="10" fill="#1c2618" stroke="#97ce4c"/>
+  <text x="330" y="55" fill="#e9edf2" font-size="15" text-anchor="middle" font-weight="bold">Rick and Morty API</text>
+  <text x="330" y="75" fill="#9aa7b5" font-size="12" text-anchor="middle">API externa pública</text>
+  <text x="330" y="93" fill="#9aa7b5" font-size="12" text-anchor="middle">(sem chave)</text>
+
+  <rect x="530" y="150" width="230" height="120" rx="10" fill="#171d26" stroke="#97ce4c" stroke-width="2"/>
+  <text x="645" y="192" fill="#e9edf2" font-size="16" text-anchor="middle" font-weight="bold">Multiverso API</text>
+  <text x="645" y="214" fill="#9aa7b5" font-size="12" text-anchor="middle">Python (Flask)</text>
+  <text x="645" y="232" fill="#9aa7b5" font-size="12" text-anchor="middle">CRUD favoritos +</text>
+  <text x="645" y="250" fill="#9aa7b5" font-size="12" text-anchor="middle">regra de negócio (episódios)</text>
+
+  <ellipse cx="645" cy="350" rx="70" ry="26" fill="#171d26" stroke="#97ce4c"/>
+  <text x="645" y="355" fill="#e9edf2" font-size="13" text-anchor="middle">SQLite</text>
+
+  <line x1="170" y1="210" x2="228" y2="210" stroke="#97ce4c" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="330" y1="150" x2="330" y2="112" stroke="#97ce4c" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="345" y="130" fill="#9aa7b5" font-size="11">fetch (GET busca)</text>
+
+  <line x1="430" y1="210" x2="528" y2="210" stroke="#97ce4c" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <text x="435" y="200" fill="#9aa7b5" font-size="11">REST: GET/POST/PUT/DELETE</text>
+
+  <line x1="645" y1="270" x2="645" y2="322" stroke="#97ce4c" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <path d="M 645 150 C 500 90, 420 55, 428 60" fill="none" stroke="#97ce4c" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+  <text x="500" y="105" fill="#9aa7b5" font-size="10">GET episódios (regra de negócio)</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#97ce4c"/>
+    </marker>
+  </defs>
+</svg>

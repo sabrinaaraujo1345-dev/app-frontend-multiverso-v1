@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorador do Multiverso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <img
+        class="hero-banner"
+        src="hero.jpg"
+        alt="Ilustração de Rick e Morty diante de um portal cósmico"
+      />
+      <div class="brand-text">
+        <h1>Explorador do Multiverso</h1>
+        <p class="tagline">
+          busque personagens de Rick and Morty e monte a sua lista de favoritos
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel search-panel">
+        <h2>Buscar personagem</h2>
+        <form id="search-form" class="search-form">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Ex: Rick, Morty, Summer..."
+            autocomplete="off"
+          />
+          <button type="submit">Buscar</button>
+        </form>
+        <p class="hint">
+          Dados do nome, status, espécie e imagem vêm da API pública
+          <strong>Rick and Morty API</strong>.
+        </p>
+        <div id="search-results" class="cards-grid"></div>
+        <p id="search-status" class="status"></p>
+      </section>
+
+      <section class="panel list-panel">
+        <h2>Meus favoritos</h2>
+        <div class="list-header">
+          <div id="stats-box" class="stats-box"></div>
+          <div class="filters">
+            <select id="filter-status">
+              <option value="">Todo status</option>
+              <option value="Alive">Vivo</option>
+              <option value="Dead">Morto</option>
+              <option value="unknown">Desconhecido</option>
+            </select>
+            <input
+              type="text"
+              id="filter-species"
+              placeholder="Filtrar por espécie..."
+            />
+            <select id="sort-by">
+              <option value="criado_em">Mais recentes</option>
+              <option value="character_name">Nome (A–Z)</option>
+              <option value="status">Status</option>
+            </select>
+          </div>
+        </div>
+        <p></p>
+
+        <div id="list-results" class="cards-grid"></div>
+        <p id="list-status" class="status"></p>
+
+        <div class="pagination">
+          <button id="prev-page">← Anterior</button>
+          <span id="page-info">página 1</span>
+          <button id="next-page">Próxima →</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Feito para o MVP de componentização — Interface consome Rick and Morty
+        API (externo) e a API própria (multiverso-api).
+      </p>
+    </footer>
+
+    <div id="edit-dialog" class="overlay hidden">
+      <div class="dialog">
+        <!-- Título da janela -->
+        <h3 id="dialog-title">Notas do personagem</h3>
+
+        <!-- Área de notas -->
+        <div id="notas-box">
+          <label for="edit-notas">Notas</label>
+
+          <textarea
+            id="edit-notas"
+            rows="5"
+            placeholder="Ex: personagem favorito da 1ª temporada..."
+          ></textarea>
+
+          <div class="dialog-actions">
+            <button id="edit-cancel" class="ghost">Fechar</button>
+            <button id="edit-save">Salvar</button>
+          </div>
+        </div>
+
+        <!-- Área de episódios -->
+        <div id="episodios-box" class="episodios-box hidden">
+          <div id="episodios-list"></div>
+
+          <div class="dialog-actions">
+            <button id="episodios-close" class="ghost">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
