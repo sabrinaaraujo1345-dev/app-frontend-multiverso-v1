@@ -1,8 +1,7 @@
 // Explorador do Multiverso — front-end
 // Componente externo: Rick and Morty API (https://rickandmortyapi.com) —
 // sem chave, uso livre, CORS liberado.
-// Componente próprio: API "multiverso-api" (Flask), CRUD de favoritos +
-// regra de negócio (episódios do personagem).
+// Componente próprio: API "multiverso-api" (Flask), CRUD de favoritos + regra de negócio (episódios do personagem).
 
 const API_BASE = window.MULTIVERSO_API_URL || "http://localhost:5000/api";
 
