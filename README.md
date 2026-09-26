@@ -63,7 +63,7 @@ multiverso-frontend/
 └── Dockerfile
 ```
 
-## Funcionalidades extras (criatividade)
+## Funcionalidades extras
 
 - Filtro por status e por espécie, ordenação (recentes / nome / status) e paginação na lista de favoritos.
 - Regra de negócio: busca dos episódios em que o personagem favoritado aparece, encadeando duas chamadas 
